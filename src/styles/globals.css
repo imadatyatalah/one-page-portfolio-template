@@ -12,3 +12,11 @@
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
 }
+
+#__next {
+  @apply mx-6 divide-y divide-[#CCCCCC] sm:mx-20;
+}
+
+.custom-container {
+  @apply w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg;
+}
