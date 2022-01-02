@@ -1,12 +1,16 @@
+import React from "react";
+
 import cn from "classnames";
 
-const Mailto = ({ email, subject = "", body = "", children }: any) => {
-  let params = subject || body ? "?" : "";
-  if (subject) params += `subject=${encodeURIComponent(subject)}`;
-  if (body) params += `${subject ? "&" : ""}body=${encodeURIComponent(body)}`;
-
+const Mailto = ({
+  email,
+  children,
+}: {
+  email: string;
+  children: React.ReactNode;
+}) => {
   return (
-    <a className="underline" href={`mailto:${email}${params}`}>
+    <a className="underline" href={`mailto:${email}`}>
       {children}
     </a>
   );
@@ -15,7 +19,7 @@ const Mailto = ({ email, subject = "", body = "", children }: any) => {
 const ContactSection = ({ currentSection }: { currentSection: string }) => {
   const contactClassName = cn(
     currentSection === "/#contact"
-      ? "flex flex-col items-center text-center"
+      ? "flex flex-col items-center text-center custom-container"
       : "hidden"
   );
 
@@ -33,11 +37,7 @@ const ContactSection = ({ currentSection }: { currentSection: string }) => {
         </p>
 
         <p className="leading-loose text-gray-500 transition-all hover:text-cyan-600">
-          <Mailto
-            email="placeholder@something.com"
-            subject="Hello There!"
-            body="Hello world!"
-          >
+          <Mailto email="placeholder@something.com">
             placeholder@something.com
           </Mailto>
         </p>

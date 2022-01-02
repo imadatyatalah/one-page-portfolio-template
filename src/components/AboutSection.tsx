@@ -3,7 +3,7 @@ import cn from "classnames";
 const AboutSection = ({ currentSection }: { currentSection: string }) => {
   const aboutClassName = cn(
     currentSection === "/#about"
-      ? "flex flex-col items-center text-center"
+      ? "flex flex-col items-center text-center custom-container"
       : "hidden"
   );
 

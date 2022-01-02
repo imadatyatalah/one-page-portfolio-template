@@ -13,10 +13,20 @@
     U+FEFF, U+FFFD;
 }
 
-#__next {
-  @apply mx-6 divide-y divide-[#CCCCCC] sm:mx-20;
+@layer base {
+  #__next {
+    @apply mx-6 divide-y divide-[#CCCCCC] sm:mx-20 lg:mx-40;
+  }
+
+  header,
+  main,
+  footer {
+    @apply mx-auto max-w-[1440px];
+  }
 }
 
-.custom-container {
-  @apply w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg;
+@layer components {
+  .custom-container {
+    @apply w-full container md:max-w-xl;
+  }
 }
