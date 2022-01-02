@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://next-js-tailwindcss-template.vercel.app
+Host: https://one-page-portfolio-template.vercel.app
 
 # Sitemaps
-Sitemap: https://next-js-tailwindcss-template.vercel.app/sitemap.xml
+Sitemap: https://one-page-portfolio-template.vercel.app/sitemap.xml

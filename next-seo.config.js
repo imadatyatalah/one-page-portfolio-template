@@ -5,13 +5,13 @@ const NextSeo = {
 
   openGraph: {
     type: "website",
-    url: "",
-    site_name: "",
+    url: "https://one-page-portfolio-template.vercel.app",
+    site_name: "One Page Portfolio Template",
   },
 
   twitter: {
     handle: "@ImadAtyat",
-    site: "@cna-chakra-ui-template",
+    site: "@one-page-portfolio-template",
     cardType: "summary_large_image",
   },
 };
